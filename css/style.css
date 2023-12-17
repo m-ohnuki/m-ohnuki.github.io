@@ -1,25 +1,52 @@
 @charset "utf-8";
 
-/*全体の設定
----------------------------------------------------------------------------*/
-
 /*画像全般の設定*/
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 
+/* ウィンドウ背景色の設定 */
+body{
+	background-color: rgb(253, 251, 220);
+}
 
-
-
-/*リンクテキスト全般の設定
----------------------------------------------------------------------------*/
+/* リンク色の設定 */
 a {
-	color: #777;		/*文字色*/
-	transition: 0.3s;	/*hoverまでにかける時間。0.3秒。*/
+	color: #ff8c49;		/*文字色*/
+}
+a:hover{
+	color: #ffc19e;
+}
+/* a:visited{
+	color: #58a6ff;  訪問した時はいらんかな
+} */
+
+/* h(見出し)の設定 */
+h1{
+	color: #0b0b0c;
+	text-align: center;
+	font-size: 250%;
 }
 
-/*マウスオン時*/
-a:hover {
-	color: var(--primary-color);	/*css冒頭で指定しているテーマカラーを読み込みます*/
+h2{
+	text-align: center;
+	border: 1px;
+	padding: 0.5em 1em;
+	background-color: #e1eef5;
+	box-shadow: 5px -5px #4c9ac0;
 }
+
+
+/* 情報データ見出し(dt)の設定 */
+dt{
+	font-weight: bold;
+}
+
+
+/* リード文領域の設定 */
+
+/* 性別等の設定 */
+
+
+
 
 
 
