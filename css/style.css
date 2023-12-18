@@ -3,6 +3,15 @@
 /*画像全般の設定*/
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 
+/*コンテンツ全体枠の設定*/
+#wrap{
+	width: 798px;
+	margin: 40px auto;
+	padding: 40px 80px;
+	border: #f6bb9e 1px solid;
+	background-color: #fff;
+}
+
 /* ウィンドウ背景色の設定 */
 body{
 	background-color: rgb(253, 251, 220);
@@ -34,6 +43,29 @@ h2{
 	box-shadow: 5px -5px #4c9ac0;
 }
 
+h3 {
+	padding: 0.5em;/*文字周りの余白*/
+	color: #494949;/*文字色*/
+	background: #fffaf4;/*背景色*/
+	border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+}
+
+h4 {
+	color: #505050;/*文字色*/
+	padding: 0.5em;/*文字周りの余白*/
+	display: inline-block;/*おまじない*/
+	line-height: 1.3;/*行高*/
+	background: #dbebf8;/*背景色*/
+	vertical-align: middle;
+	border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+}
+  
+h4:before {
+	content: '●';
+	color: white;
+	margin-right: 8px;
+}
+
 
 /* 情報データ見出し(dt)の設定 */
 dt{
@@ -45,11 +77,77 @@ dt{
 
 /* 性別等の設定 */
 
-/* カルーセル全体 */
+/* ナビ */
+nav ul{
+	display: table;
+	margin: 0 auto;
+	padding: 0 ;
+	width: 80%;
+	text-align: center;
+}
+nav li{
+	display: table-cell;
+	min-width: 50px;
+}
+nav a{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: #000000;
+	padding-bottom: 5px;
+}
+nav li.current{
+	border-bottom: 10px solid #92D050;
+}
+nav li:hover{
+	color: #E7DA66;
+	border-bottom: 3px solid #F0E475;
+}
+
+
+/*写真と特徴データの設定*/
+/* 横並び */
+
+.flexcat {
+	display: flex; /*横並び*/
+  }
+  .flexcat .imagecat {
+	width: 640px; /*画像サイズ指定*/
+	margin: 0;
+	padding: 0;
+  }
+  .flexcat .imagecat img {
+	width: 100%;
+	height: auto;
+  }
+  .flexcat .textcat {
+	margin: 0 0 0 20px;
+	padding: 0;
+  }
+
+.ph{
+	float: left;
+	margin-right: 30px;
+}
+
+.data{
+	float: left;
+	width: 388px;
+}
+
+h4.nextcat{
+	clear:left;
+}
+
+
+/* yosakoiのカルーセル全体 */
 .carousel {
 	/* 水平方向中央寄せ */
-	display: flex;
-	justify-content: center;
+	width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* コンテンツを水平方向に中央揃え */
+  align-items: center; /* コンテンツを垂直方向に中央揃え */
   }
   /* カルーセル内容 */
   .contains {
@@ -61,6 +159,7 @@ dt{
 	position: relative;
 	padding: 0;
 	list-style: none;
+	background-color: rgb(0, 0, 0);
   }
   /* スライド切り換え用ラジオボタンは常に非表示 */
   .slide_select {
@@ -75,8 +174,19 @@ dt{
 	position: absolute;
 	/* スライドの初期値は選択されていないので透明にしておく */
 	opacity: 0;
-	
   }
+  .slide img{
+	max-width: 100%;
+	height: auto;
+	object-fit: contain; 
+	margin: 0 auto; 
+  }
+  /* .slide-img{
+	max-width: 100%;
+	height: auto;
+	object-fit: contain; 
+  } */
+
   /* 前へ次へボタン */
   .scroll_button {
 	position: absolute;
@@ -108,7 +218,7 @@ dt{
   }
   /* 次へボタン */
   .scroll_next {
-	right: 15px;
+	right: 215px;
 	/* 上辺と右辺の枠線を回転して"＞"にする */
 	transform: rotate(45deg);
   }

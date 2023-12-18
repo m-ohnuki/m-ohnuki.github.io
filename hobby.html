@@ -10,6 +10,7 @@
     </head>
 
     <body>
+        <div id="wrap">
         <header>
             <h1>ohnuki's portfolio</h1>
         </header>
@@ -18,21 +19,21 @@
                 <li><a href="index.html">home</a></li>
                 <li><a href="about.html">about</a></li>
                 <li><a href="practice.html">practice</a></li>
-                <li><a href="hobby.html">hobby</a></li>
+                <li class=”current”><a href="hobby.html">hobby</a></li>
             </ul>
         </nav>
 
         <h2>hobby</h2>
-        <nav>
+        <nav1>
             <ul>
                 <li><a href="#yosakoi">YOSAKOI</a></li>
                 <li><a href="#cat">cat</a></li>
             </ul>
-        </nav>
+        </nav1>
         
         <section id="yosakoi">
             <h3>YOSAKOI</h3>
-            <p>大学生の時にYOSAKOIに出会い、今でも年に1度はどこかのチームで踊っている。</p>
+            <p>大学生の時にYOSAKOIに出会い、今でも年に1度はどこかのチームに所属している。</p>
             <ul>
                 <li>酪農学園大学　2013～2016</li>
                 <li>無形　2014～2016</a></li>
@@ -54,29 +55,29 @@
                     <!-- スライド（1番目） -->
                     <div class="slide">
                     <!-- スライドの前へ、次へとスクロールさせるボタン -->
-                    <div class="scroll_controler">
-                        <label class="scroll_button scroll_prev" for="SlideC"></label>
-                        <label class="scroll_button scroll_next" for="SlideB"></label>
-                    </div>
-                    <!-- スライドの画像 -->
-                    <!-- div要素に変えれば文字を加えることもできます。 -->
-                    <img src="images/hobby/yosakoi/yosakoi2017-1.jpg" alt="yosakoi2017写真">
+                        <div class="scroll_controler">
+                            <label class="scroll_button scroll_prev" for="SlideC"></label>
+                            <label class="scroll_button scroll_next" for="SlideB"></label>
+                        </div>
+                        <!-- スライドの画像 -->
+                        <!-- div要素に変えれば文字を加えることもできます。 -->
+                        <img src="images/hobby/yosakoi/yosakoi2017-1.jpg" alt="yosakoi2017写真" class="slide-img">                   
                     </div>
                     <!-- スライド（2番目） -->
                     <div class="slide">
-                    <div class="scroll_controler">
-                        <label class="scroll_button scroll_prev" for="SlideA"></label>
-                        <label class="scroll_button scroll_next" for="SlideC"></label>
-                    </div>
-                    <img src="images/hobby/yosakoi/yosakoi2019-1.png" alt="yosakoi2019写真">
+                        <div class="scroll_controler">
+                            <label class="scroll_button scroll_prev" for="SlideA"></label>
+                            <label class="scroll_button scroll_next" for="SlideC"></label>
+                        </div>
+                        <img src="images/hobby/yosakoi/yosakoi2019-1.png" alt="yosakoi2019写真">
                     </div>
                     <!-- スライド（3番目） -->
                     <div class="slide">
-                    <div class="scroll_controler">
-                        <label class="scroll_button scroll_prev" for="SlideB"></label>
-                        <label class="scroll_button scroll_next" for="SlideA"></label>
-                    </div>
-                    <img src="images/hobby/yosakoi/yosakoi2023-1.jpg" alt="yosakoi2023写真">
+                        <div class="scroll_controler">
+                            <label class="scroll_button scroll_prev" for="SlideB"></label>
+                            <label class="scroll_button scroll_next" for="SlideA"></label>
+                        </div>
+                        <img src="images/hobby/yosakoi/yosakoi2023-1.jpg" alt="yosakoi2023写真">
                     </div>
                     <!-- スライド移動用ボタン -->
                     <div class="move_controler">
@@ -95,87 +96,107 @@
             <p>自身が小学生の頃から猫に囲まれた生活をしていた。<br>
                 中学生のころに酪農学園大学に看護の学類ができると知り、その段階で進学先を決めたぐらい猫が好きだった。<br>
                 以下素敵な猫たちの紹介になります。</p>
-            <h4>との</h4>
-            <img src="images/hobby/cats/cat1-1.jpg" alt="との写真">
-            <dl>
+            <h4>との</h4><br>
+            <div class="flexcat">
+            <img src="images/hobby/cats/cat1-1.jpg" alt="との写真" class="imagecat">
+            <dl class="textcat">
                 <dt>性別</dt><dd>オス</dd>
                 <dt>品種</dt><dd>スコティッシュフォールド</dd>
                 <dt>特徴</dt><dd>おっとりしており常に仰向けで寝ている。<br>
                     されるがままで果たして本当に猫なのだろうか。</dd>
             </dl>
-            <h4>ひめ</h4>
-            <img src="images/hobby/cats/cat2-1.jpg" alt="ひめ写真">
-            <dl>
+            </div>
+            <h4>ひめ</h4><br>
+            <div class="flexcat">
+            <img src="images/hobby/cats/cat2-1.jpg" alt="ひめ写真" class="imagecat">
+            <dl class="textcat">
                 <dt>性別</dt><dd>メス</dd>
                 <dt>品種</dt><dd>スコティッシュフォールド</dd>
                 <dt>特徴</dt><dd>歳をとるにつれて性格が穏やかになっていった。<br>
                     よく舌をしまい忘れる。とのと兄妹。</dd>
             </dl>
-            <h4>ジャン</h4>
-            <img src="images/hobby/cats/cat3-1.png" alt="ジャン写真">
-            <dl>
+            </div>
+            <h4>ジャン</h4><br>
+            <div class="flexcat">
+            <img src="images/hobby/cats/cat3-1.png" alt="ジャン写真" class="imagecat">
+            <dl class="textcat">
                 <dt>性別</dt><dd>オス</dd>
                 <dt>品種</dt><dd>ノルウェージャンフォレストキャット</dd>
                 <dt>特徴</dt><dd>とにかく怖がり。インターホンが鳴るだけでどこかへと消えてしまう。</dd>
             </dl>
-            <h4>ハヤテ</h4>
-            <img src="images/hobby/cats/cat4-1.jpg" alt="ハヤテ写真">
-            <dl>
+            </div>
+            <h4>ハヤテ</h4><br>
+            <div class="flexcat">
+            <img src="images/hobby/cats/cat4-1.jpg" alt="ハヤテ写真" class="imagecat">
+            <dl class="textcat">
                 <dt>性別</dt><dd>オス</dd>
                 <dt>品種</dt><dd>アビシニアン</dd>
                 <dt>特徴</dt><dd>誰彼構わずすり寄る。知らない人にでもすり寄る。<br>
                     アビシニアンなのにとても大きい。</dd>
             </dl>
-            <h4>きのこ</h4>
-            <img src="images/hobby/cats/cat5-1.jpg" alt="きのこ写真">
-            <dl>
+            </div>
+            <h4>きのこ</h4><br>
+            <div class="flexcat">
+            <img src="images/hobby/cats/cat5-1.jpg" alt="きのこ写真" class="imagecat">
+            <dl class="textcat">
                 <dt>性別</dt><dd>メス</dd>
                 <dt>品種</dt><dd>雑種</dd>
                 <dt>特徴</dt><dd>滝野にあるきのこ王国に住み着いてしまったため引き取った。<br>
                     母親にしかあまり懐かない。怒りの沸点がわからず撫でていると急に噛んでくる。</dd>
             </dl>
-            <h4>モカ</h4>
-            <img src="images/hobby/cats/cat6-1.jpg" alt="モカ写真">
-            <dl>
+            </div>
+            <h4>モカ</h4><br>
+            <div class="flexcat">
+            <img src="images/hobby/cats/cat6-1.jpg" alt="モカ写真" class="imagecat">
+            <dl class="textcat">
                 <dt>性別</dt><dd>メス</dd>
                 <dt>品種</dt><dd>マンチカン</dd>
                 <dt>特徴</dt><dd>マンチカンはやはり脚が短い。歩いた時に揺れるおなかがかわいい。<br>
                     コード類を噛むいたずらっ子。</dd>
             </dl>
-            <h4>はる</h4>
-            <img src="images/hobby/cats/cat7-1.jpg" alt="はる写真">
-            <dl>
+            </div>
+            <h4>はる</h4><br>
+            <div class="flexcat">
+            <img src="images/hobby/cats/cat7-1.jpg" alt="はる写真" class="imagecat">
+            <dl class="textcat">
                 <dt>性別</dt><dd>メス</dd>
                 <dt>品種</dt><dd>雑種</dd>
                 <dt>特徴</dt><dd>陸上自衛隊の駐屯地に頻繁に現れるようになったとのことで、駆除されてしまう前に引き取った。<br>
                     とてもまるい。膝の上で寝てくれるため猫好きにはたまらないはず。<br>
                     しまとしろの母親。</dd>
             </dl>
-            <h4>しま</h4>
-            <img src="images/hobby/cats/cat8-1.jpg" alt="しま写真">
-            <dl>
+            </div>
+            <h4>しま</h4><br>
+            <div class="flexcat">
+            <img src="images/hobby/cats/cat8-1.jpg" alt="しま写真" class="imagecat">
+            <dl class="textcat">
                 <dt>性別</dt><dd>オス</dd>
                 <dt>品種</dt><dd>雑種</dd>
                 <dt>特徴</dt><dd>何の品種が混ざっているのかやけに大きい。<br>
                     他の猫を撫でていると少し距離を開けて近くに座りこむ。</dd>
             </dl>
-            <h4>しろ</h4>
-            <img src="images/hobby/cats/cat9-1.jpg" alt="しろ写真">
-            <dl>
+            </div>
+            <h4>しろ</h4><br>
+            <div class="flexcat">
+            <img src="images/hobby/cats/cat9-1.jpg" alt="しろ写真" class="imagecat">
+            <dl class="textcat">
                 <dt>性別</dt><dd>メス</dd>
                 <dt>品種</dt><dd>雑種</dd>
                 <dt>特徴</dt><dd>とても寂しがりで誰もいなくなってしまうと鳴いてしまう。<br>
                     長毛のためたまに排泄物を付けたまま歩く。</dd>
             </dl>
-            <h4>なつ</h4>
-            <img src="images/hobby/cats/cat10-1.jpg" alt="なつ写真">
-            <dl>
+            </div>
+            <h4>なつ</h4><br>
+            <div class="flexcat">
+            <img src="images/hobby/cats/cat10-1.jpg" alt="なつ写真" class="imagecat">
+            <dl class="textcat">
                 <dt>性別</dt><dd>メス</dd>
                 <dt>品種</dt><dd>雑種</dd>
                 <dt>特徴</dt><dd>はる親子とは入れ違いで現れるようになった。<br>
                     １匹で徘徊しておりカラスに攻撃されてしまうぐらい小さかったため引き取った。<br>
                     常に警戒心が強く人の手が届かないところにいる。</dd>
             </dl>
+            </div>
         </section><!-- cat -->
             
         
@@ -187,6 +208,6 @@
         <div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
 
         <p><small>Copyright &copy; ohnuki's portfolio All Rights Reserved.</small></p>
-        
+        </div>
     </body>
 </html>
