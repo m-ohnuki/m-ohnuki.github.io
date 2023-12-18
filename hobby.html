@@ -44,6 +44,50 @@
                 <li>我流　2019～2021.2023</li>
                 <li>GARAN43/35°　2022～2023</li>
             </ul>
+            <div class="carousel">
+                <!-- スライドのリスト -->
+                <div class="contains">
+                    <!-- スライドを選択するためのラジオボタン。 -->
+                    <input class="slide_select" type="radio" id="SlideA" name="slide_check" checked />
+                    <input class="slide_select" type="radio" id="SlideB" name="slide_check" />
+                    <input class="slide_select" type="radio" id="SlideC" name="slide_check" />
+                    <!-- スライド（1番目） -->
+                    <div class="slide">
+                    <!-- スライドの前へ、次へとスクロールさせるボタン -->
+                    <div class="scroll_controler">
+                        <label class="scroll_button scroll_prev" for="SlideC"></label>
+                        <label class="scroll_button scroll_next" for="SlideB"></label>
+                    </div>
+                    <!-- スライドの画像 -->
+                    <!-- div要素に変えれば文字を加えることもできます。 -->
+                    <img src="images/hobby/yosakoi/yosakoi2017-1.jpg" alt="yosakoi2017写真">
+                    </div>
+                    <!-- スライド（2番目） -->
+                    <div class="slide">
+                    <div class="scroll_controler">
+                        <label class="scroll_button scroll_prev" for="SlideA"></label>
+                        <label class="scroll_button scroll_next" for="SlideC"></label>
+                    </div>
+                    <img src="images/hobby/yosakoi/yosakoi2019-1.png" alt="yosakoi2019写真">
+                    </div>
+                    <!-- スライド（3番目） -->
+                    <div class="slide">
+                    <div class="scroll_controler">
+                        <label class="scroll_button scroll_prev" for="SlideB"></label>
+                        <label class="scroll_button scroll_next" for="SlideA"></label>
+                    </div>
+                    <img src="images/hobby/yosakoi/yosakoi2023-1.jpg" alt="yosakoi2023写真">
+                    </div>
+                    <!-- スライド移動用ボタン -->
+                    <div class="move_controler">
+                    <!-- スライドのボタン -->
+                    <label class="button_move" for="SlideA"></label>
+                    <label class="button_move" for="SlideB"></label>
+                    <label class="button_move" for="SlideC"></label>
+                    </div>
+                </div>
+                </div>
+            
         </section><!-- yosakoi -->
         
         <section id="cat"> 
