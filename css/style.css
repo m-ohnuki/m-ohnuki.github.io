@@ -74,6 +74,50 @@ h4:before {
 	margin-right: 8px;
 }
 
+.news-list{
+	list-style: none outside;
+	margin: 0;
+	padding: 0;
+  }
+  .news-list .news-item .news-a{
+	display: flex;
+	flex-wrap: wrap;
+	flex-wrap: nowrap;
+	text-decoration: none;
+	color: #333;
+	border-bottom: 1px solid #CCC;
+	padding: 20px 20px;
+  }
+  .news-list .news-item:first-child .news-a{
+	border-top: 1px solid #CCC;
+  }
+  .news-list .news-item .news-date{
+	margin: 0;
+	min-width: 120px;
+	font-size: 16px;
+	color: #999;
+	padding: 0 20px 0 0;
+  }
+  .news-list .news-item .news-title{
+	margin: 0;
+	width: 100%;
+  }
+  .news-list .news-item .news-a:hover .news-title{
+	color: #00F;
+  }
+  
+  @media screen and (max-width: 767px){
+  .news-list .news-item .news-a{
+	flex-wrap: wrap;
+  }
+  .news-list .news-item .news-date{
+	min-width: 100px;
+  }
+  .news-list .news-item .news-title{
+	margin-top: 10px;
+  }
+  }
+
 
 /* 情報データ見出し(dt)の設定 */
 dt{
