@@ -28,6 +28,14 @@ a:hover{
 	color: #58a6ff;  訪問した時はいらんかな
 } */
 
+#topnews{
+	text-align: center;
+}
+
+#copyrigh{
+	text-align: center;
+}
+
 /* h(見出し)の設定 */
 h1{
 	color: #0b0b0c;
@@ -140,7 +148,7 @@ h4.nextcat{
 }
 
 
-/* yosakoiのカルーセル全体 */
+/* yosakoiのカルーセル全体 画像の配置うまくできず*/
 .carousel {
 	/* 水平方向中央寄せ */
 	width: 100%;
@@ -151,8 +159,7 @@ h4.nextcat{
   }
   /* カルーセル内容 */
   .contains {
-	/* サイズは自由に変更してください。*/
-	/* 下の.slideも同じサイズにしてください。 */
+	/* 下の.slideと同じサイズ*/
 	width: 1000px;
 	height: 600px;
 	overflow: hidden;
@@ -167,8 +174,7 @@ h4.nextcat{
   }
   /* 各スライド */
   .slide {
-	/* サイズは自由に変更してください。*/
-	/* 上の.containsも同じサイズにしてください。 */
+	/* 上の.containsと同じサイズ*/
 	width: 1000px;
 	height: 600px;
 	position: absolute;
