@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>study</title>
         <meta name="description" content="htmlcssの勉強用ページ">
-        <link href="css/style.css" rel="stylesheet" media="all">
+        <!-- <link href="css/style.css" rel="stylesheet" media="all"> -->
     </head>
     <body>
 
@@ -77,7 +77,7 @@
         <br>
 
         <!-- フォーム ---------------------------->
-        <form action="index.html" method="post" name="contact-form">
+        <form action="study.html" method="post" name="contact-form">
             名前：<input type="text"><br>
             名前：<input type="text" placeholder="半透明の見本が入ってるよ"><br>
             text：<input type="text" placeholder="1行のテキスト"><br>
@@ -86,10 +86,110 @@
             tel：<input type="tel" placeholder="電話番号"><br>
             url：<input type="url" placeholder="WebサイトのURL"><br>
             <br>
-            
-        
-
+            性別：
+            <input type="radio" name="gender" value="男">男
+            <input type="radio" name="gender" value="女">女
+            <input type="radio" name="gender" value="その他" checked>その他<br>
+            <br>
+            好きな色：
+            <input type="checkbox" name="color" value="赤"checked>赤
+            <input type="checkbox" name="color" value="青"checked>青
+            <input type="checkbox" name="color" value="黄">黄
+            <input type="checkbox" name="color" value="緑">緑<br>
+            <br>
+            文字も選択可能：
+            <input type="checkbox" name="color" value="赤" id="red"><label for="red">赤</label>
+            <input type="checkbox" name="color" value="青" id="blue"><label for="blue">青</label>
+            <input type="checkbox" name="color" value="黄" id="yellow"><label for="yellow">黄</label>
+            <input type="checkbox" name="color" value="緑" id="green"><label for="green">緑</label><br>
+            <br>
+            送信ボタン：
+            <input type="submit" value="送信する">
+            <input type="image" src="images/hobby/cats/cat1-1.jpg" alt="送信する"><br>
+            <br>
+            血液型：
+            <select name="bloodtype">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="O">O</option>
+                <option value="AB">AB</option>
+                <option value="不明" selected>不明</option>
+            </select>
+            <select name="bloodtype" multiple>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="O">O</option>
+                <option value="AB" selected>AB</option>
+                <option value="不明" selected>不明</option>
+            </select><br>
+            <br>
+            複数行テキスト入力欄：
+            <textarea name="message">メッセージを入力</textarea>
+            <textarea name="message"placeholder="メッセージを入力"></textarea><br>
         </form>
+        <br>
+
+        <!-- ヘッダー ---------------------------->
+        <header>
+            <h1>ページタイトル</h1>
+            <p>このWebサイトは練習用です</p>
+            <nav>
+                <ul>
+                    <li><a href="#">サービス紹介</a></li>
+                    <li><a href="#">料金</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+
+        <!-- メインコンテンツ ---------------------------->
+        <main>
+            <!-- 記事 ---------------------------->
+            <article>
+                <h2>記事タイトル</h2>
+                <p>最新のスマートフォン情報！…</p>
+            </article>
+            <br>
+
+            <!-- テーマを持ったグループ ---------------------------->
+            <section>
+                <h2>その他おすすめ記事</h2>
+                <ul>
+                    <li><a href="#">スマートウォッチって…</a></li>
+                    <li><a href="#">ランニングにはこの…</a></li>
+                </ul>
+            </section>
+        </main>
+        <br>
+
+        <!-- 補足情報 ---------------------------->
+        <aside>
+            <h3>中の人ってこんな人</h3>
+            <p>このWebサイトで情報を…</p>
+        </aside>
+        <br>
+
+        <!-- フッター ---------------------------->
+        <footer>
+            <ul>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">twitter</a></li>
+            </ul>
+            <p>Copyright 2023 ohnuki</p>
+        </footer>
+        <br>
+
+        <!-- デザインのためのグループ ---------------------------->
+        <div>
+            <img src="images/hobby/cats/cat1-1.jpg" alt="猫">
+            <p>との</p>
+        </div>
+        <div>
+            <img src="images/hobby/cats/cat2-1.jpg" alt="猫">
+            <p>ひめ</p>
+        </div>
+
 
     </body>
 </html>
