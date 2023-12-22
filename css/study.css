@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* ユーザーのブラウザ設定に対する相対値 */
+html{
+	font-size: 100%;
+}
+
+body{
+	background-color: Cornsilk;
+}
+
+
+/* 複数セレクタ指定 */
+h1,h2{
+	background-color: rgb(167, 255, 148);
+	color: #0bd;
+	font-size: 20px;
+	font-weight: lighter;
+	font-family: serif;
+}
+
+/* 入れ子の指定 */
+div p {
+	color: rgb(100, 50, 150, 0.1);
+	font-size: 30px;
+	font-weight: bold;
+	font-family: serif;
+
+}
+
+/* いろんな設定 */
+main section{
+	font-weight: normal;
+	line-height: normal;
+	text-align: left;
+}
+main article{
+	font-weight: bold;
+	line-height: 1;
+	text-align: center;
+
+}
