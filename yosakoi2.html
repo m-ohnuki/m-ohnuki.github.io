@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>portfolio_yosakoi</title>
+        <meta name="description" content="ポートフォリオのyosakoi">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="icon" type="image/png" href="images/icon/icon_top.png">
+    </head>
+
+    <body>
+
+        <header class="pageheader">
+            <h1><a href="index2.html"><img class="logo" src="images/icon/logo.png" alt="ohnuki's portfolio"></a></h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="about2.html">about</a></li>
+                    <li><a href="practice2.html">practice</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="imageset">
+            <h2>yosakoi</h2>
+        </div>            
+        
+        <main id="yosakoi">
+            <h3>YOSAKOI</h3>
+            <p>大学生の時にYOSAKOIに出会い、今でも年に1度はどこかのチームに所属している。</p>
+            <ul>
+                <li>酪農学園大学　2013～2016</li>
+                <li>無形　2014～2016</a></li>
+                <li>RE:LIGHT　2015.2018</li>
+                <li>Legate　2016</li>
+                <li>MAO　2016</li>
+                <li>遊鳥　2017</li>
+                <li>心依　2018</li>
+                <li>我流　2019～2021.2023</li>
+                <li>GARAN43/35°　2022～2023</li>
+            </ul>
+            <div class="carousel">
+                <!-- スライドのリスト -->
+                <div class="contains">
+                    <!-- スライドを選択するためのラジオボタン。 -->
+                    <input class="slide_select" type="radio" id="SlideA" name="slide_check" checked />
+                    <input class="slide_select" type="radio" id="SlideB" name="slide_check" />
+                    <input class="slide_select" type="radio" id="SlideC" name="slide_check" />
+                    <!-- スライド（1番目） -->
+                    <div class="slide">
+                    <!-- スライドの前へ、次へとスクロールさせるボタン -->
+                        <div class="scroll_controler">
+                            <label class="scroll_button scroll_prev" for="SlideC"></label>
+                            <label class="scroll_button scroll_next" for="SlideB"></label>
+                        </div>
+                        <!-- スライドの画像 -->
+                        <!-- div要素に変えれば文字を加えることもできます。 -->
+                        <img src="images/hobby/yosakoi/yosakoi2017-1.jpg" alt="yosakoi2017写真" class="slide-img">                   
+                    </div>
+                    <!-- スライド（2番目） -->
+                    <div class="slide">
+                        <div class="scroll_controler">
+                            <label class="scroll_button scroll_prev" for="SlideA"></label>
+                            <label class="scroll_button scroll_next" for="SlideC"></label>
+                        </div>
+                        <img src="images/hobby/yosakoi/yosakoi2019-1.png" alt="yosakoi2019写真">
+                    </div>
+                    <!-- スライド（3番目） -->
+                    <div class="slide">
+                        <div class="scroll_controler">
+                            <label class="scroll_button scroll_prev" for="SlideB"></label>
+                            <label class="scroll_button scroll_next" for="SlideA"></label>
+                        </div>
+                        <img src="images/hobby/yosakoi/yosakoi2023-1.jpg" alt="yosakoi2023写真">
+                    </div>
+                    <!-- スライド移動用ボタン -->
+                    <div class="move_controler">
+                    <!-- スライドのボタン -->
+                    <label class="button_move" for="SlideA"></label>
+                    <label class="button_move" for="SlideB"></label>
+                    <label class="button_move" for="SlideC"></label>
+                    </div>
+                </div>
+            </div>
+            
+        </main><!-- yosakoi -->
+        
+        <footer>
+            <p><small>Copyright &copy; ohnuki's portfolio All Rights Reserved.</small></p>
+        </footer>
+
+    </body>
+</html>

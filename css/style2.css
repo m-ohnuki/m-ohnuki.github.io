@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/* 共通部分 ---------------------------------------------------------------------------*/
+
+html {
+	font-size: 100%;	/* デフォルトの文字サイズを基準とする */
+}
+
+body {
+	line-height: 1.7;		/* 行の高さ指定 */
+	max-width: 1500px;		/* 横幅1500pxまで */
+	margin: 0 auto;		/* 左右の位置をautoにして中央に配置 */
+	padding: 0 5%;		/* 左右に余白を作る */
+}
+
+a {
+	text-decoration: none;		/* 線の装飾なし */
+}
+
+img {
+	max-width: 100%;		/* 画像が親要素より大きくならないように */
+}
+
+
+/* header ---------------------------------------------------------------------------*/
+
+.logo {			/* サイズ位置調整 */
+	width: 300px;
+	margin-top: 30px;
+}
+
+.main-nav {
+	display: flex;		/* 横並びに */
+	font-size: 1.25rem;		/* html要素を基準に1.25倍 */
+	margin-top: 34px;		/* 上の幅 */
+	list-style: none;		/* 先頭の・とかを表示しない */
+}
+
+.main-nav li {
+	margin-left: 36px;
+}
+
+.main-nav li a{
+	color: #000000;
+	padding: 5px 20px;	
+}
+
+.main-nav li a:hover{
+	color: #000000;
+	background: #e0e0e0;
+
+}
+
+.pageheader {		/* h1要素とnav要素に対して */
+	display: flex;		/* 横並びに */
+	justify-content: space-between;		/* justify-content:親要素にスペースがあるときに、 space-between:子要素を両端配置(3つ以上あれば残りを同間隔で配置)*/
+}
+
+
+/* page title ---------------------------------------------------------------------------*/
+
+.imageset {
+	/* background-size: cover;		画面いっぱいに縦横比率を保持したままの画像表示 */
+	/* background-position: center top;  */
+	background-image: url(../images/icon/header2.jpg);	/* 画面いっぱいに縦横比率を保持したままの画像表示 */
+	height: 200px;		/* 画像の高さ指定  */
+	position: relative;		/* absolute(子要素に記載)の起点として設定 */
+	background-size: cover;		/* 要素範囲いっぱいに表示  */
+	background-position: center;		/* センター配置  */
+	margin-bottom: 40px;
+}
+
+h2 {
+	position: absolute;		/* relative起点 */
+  	left: 50%;		/* 画像左上を基準に親要素の50%移動 */
+  	top: 50%;
+	transform: translate(-50%,-50%);		/* 画像左上を基準が基準だったため少しずれてる。文字要素の50%戻す */
+	font-size: 3rem;
+}
+
+
+/* footer ---------------------------------------------------------------------------*/
+
+footer {
+	background: #000000;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+footer p {
+	color: #ffffff;
+	font-size: 0.9rem;
+}

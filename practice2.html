@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>portfolio_practice</title>
+        <meta name="description" content="ポートフォリオのpractice">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="icon" type="image/png" href="images/icon/icon_top.png">
+    </head>
+
+    <body>
+
+        <header class="pageheader">
+            <h1><a href="index2.html"><img class="logo" src="images/icon/logo.png" alt="ohnuki's portfolio"></a></h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="about2.html">about</a></li>
+                    <li><a href="practice2.html">practice</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="imageset">
+            <h2>practice</h2>
+        </div>            
+
+        <nav1>
+            <ul>
+                <li><a href="#layoutapplication">layoutapplication</a></li>
+                <li><a href="#other">他なにか作ったら…</a></li>
+            </ul>
+        </nav1>
+        <section id="layoutapplication"> 
+            <h3>layoutapplication</h3>
+            <h4>作成経緯</h4>
+            <p>ポリテクセンターの訓練プログラムに組み込まれていた企業実習にて作成したアプリ。<br>
+                企業様よりportfolioとして使用して良いと許可をいただいたため、使用させていただきます。<br>
+                ありがとうございます。</p>
+            <h4>概要</h4>
+            <p>ARを利用して3Dデザインの家具を空間に表示させるアプリ</p>
+            <img src="images/practice/Top1.png" alt="layoutapplicationのイメージ画像">
+            <img src="images/practice/Camera5.png" alt="家具表示画像">
+            
+            <h4>機能</h4>
+            <p>家具の切り替え<br>リストから表示させたい家具の切替が可能</p>
+            <img src="images/practice/Camera3.png" alt="ジャンルの一覧画像">
+            <p>家具の絞り込み<br>選択できる家具をジャンルごとに絞り込み可能</p>
+            <img src="images/practice/Camera2.png" alt="ジャンルの絞り込み画像">
+            <p>家具のtransform調整<br>表示した家具の位置、大きさ、向きの調整が可能</p>
+            <img src="images/practice/Camera6.png" alt="家具の大きさ調整画像">
+            <img src="images/practice/Camera7.png" alt="家具の位置調整画像">
+            <p>家具配置イメージの保存<br>配置した際のイメージ画像をスマホのカメラロールに保存可能</p>
+            <img src="images/practice/Gallery.png" alt="保存時のイメージ画像">
+            <h4>おまけ要素</h4>
+            <p>Top画面の背景<br>背景がランダムで切り替わる</p>
+            <img src="images/practice/Top2.png" alt="layoutapplicationのイメージ画像">
+            <p>操作説明<br>アプリの起動後、camera画面に遷移した際1度だけ表示される(2度目の遷移は表示されない)</p>
+            <img src="images/practice/Camera1.png" alt="layoutapplicationのイメージ画像">
+            <p>UIの表示切り替え<br>状況に応じて不要なUIは非表示となる(家具選択後は検知した平面のみで操作系のUIは表示されない)</p>
+            <img src="images/practice/Camera4.png" alt="layoutapplicationのイメージ画像">
+            <h4>アピールポイント</h4>
+            <p>●外部のアセット(ツール)は使わない<br>
+            unityには多くの無料ツールがあるため、それを使えば比較的楽に実装できる機能もあったかと思う。<br>
+            だが、自ら考えてコーディングを行わなければ理解に繋がらないと考えたため、<br>
+            ツールの使用は選択肢から外していた。（カメラロールへの保存は、実装期間中は頼ってしまった）</p>
+            <p>●似たような機能は異なる方法で実装<br>
+            unityには多くの機能があるが1つの機能に頼ってしまうと、どこかで詰まったときに<br>
+            別の解決策を見つけるのが難しくなると感じたため。</p>
+            <p>●操作の補助機能<br>
+            実際に仕事をする場合はお客様がいてこそ成り立つものなので、<br>
+            できる限り使いやすくなるようにと実装した。</p>
+            <p>表示家具の位置調整<br>
+            ARカメラの特性上、カメラの起動時の位置を原点としてアプリが動作するため、<br>
+            撮影する向きを変更してしまったら正面がずれてしまう。<br>
+            例）北向きで起動しアプリ動作中に南を向いた場合<br>
+            　　カメラは常に起動時を正面ととらえているため、位置調整ボタンの前を押した場合は後ろに動く<br>
+            そこで、カメラの向きを基準に家具の調整をかけられるようにコーディングした。
+            <script src="https://gist.github.com/m-ohnuki/01e4e146b25605397b022fdc97acf460.js"></script>
+            </p>
+
+            <h4>苦労したポイント</h4>
+            <p>●スマホ本体のカメラロールへの保存<br>
+            実習期間中に挑戦するが、カメラロールを直接操作するにはjavaでのコーディングが<br>
+            必要との結果にたどり着き、進捗具合を考え一度断念した。<br>
+            実習期間後に自宅で挑戦して完成したものの、すべてを理解できず一部は<br>
+            サイトに記載されていたコードのまま。<br>
+            androidstudioの記載もあり、少し深く入り込もうとすると他の知識も必要になってくるため、<br>
+            プログラミングの難しさを感じた。
+            <script src="https://gist.github.com/m-ohnuki/489873af8e0ef6e518455d07f2b8a74f.js"></script>
+            </p>
+
+            <p>●数学的要素の理解<br>
+            objectの向きに関して、unity上で視覚的に操作できる数値と内部で動いている数値が<br>
+            異なっていたため理解に苦しんだ。<br>
+            また、どのような考え方なのかを調べたが、「unityでゲーム作るだけなら理解までは不要」<br>
+            と記載されているぐらいで、自身には到底理解できる気がしなかったのがとても悔しかった。</p>
+            <p><a href="https://qiita.com/take4eng/items/ae487c82a6f7d60ceba8">参照サイトの例</a></p>
+            <script src="https://gist.github.com/m-ohnuki/c4831176aa6c1164e3fd6ca6825b7fb0.js"></script>
+            <h4>追加したい機能</h4>
+            <p>●複数家具の表示<br>
+            実用性を考えるのであれば、複数の家具を配置できることが理想。<br>
+            実装方法：新たな家具を選択したことをトリガーに表示されている家具が削除されるため、<br>
+            削除ボタンは別途作成する。<br>
+            家具の調整UI類が「表示されている家具」と紐づいているため、複数の家具を表示した場合、<br>
+            調整UI操作時の対象が表示されているすべての家具となってしまう。<br>
+            「タップした家具」とへの変更のためRigidbodyの追加等が必要。</p>
+            <p>●家具ごとに水平面･垂直面検知の切り替え<br>
+            現状、上下方向の移動も可能なため配置自体は可能だが、<br>
+            絵画なども一度床に設置してからの調整となり手間となっている。<br>
+            実装方法：平面検知しているobjectのcomponentをscriptから動的に変更する。(水平面 ↔ 垂直面)<br>
+            (すべて検知も可能だが、画面内の情報量が多くなってしまったため、すべて検知での実装は却下した。)<br>
+            家具ごとに平面検知のtypeを持たせ、上記の切り替えを行う。</p>
+            <p>●家具ボタンの自動生成<br>
+            現在、登録家具が比較的少ないため、手動でボタンに家具のイメージ画像やprefabをセットしているが<br>
+            他にも表示したい家具を登録する場合、設定ミスが多発する可能性がある。<br>
+            家具モデルと家具の種類の登録のみで追加完了が理想。<br>
+            実装方法：scriptを使用して動的にセットするだけだが、<br>
+            エディタ上では動くものの、実機になるとセットはされていても動かなかった。<br>
+            異なるプロジェクトを作成している他の実習生も動かず、実習期間でできる内容ではないと判断し<br>
+            諦めてしまっていた。<br>
+            各objectの生成やscriptの実行タイミングなど、深いところまで勉強して実装したい。</p>
+            <p>●絵画への画像挿入<br>
+            カメラロールへの保存はとりあえずできたが、カメラロールからの読み取りは行っていないため、<br>
+            自身の好奇心で実装したい機能。スマホに3Dモデルを登録していることはないと思うので、<br>
+            普段の撮影風景の画像等を額縁に入れて表示できるようにする。<br>
+            実装方法：画像挿入用のprefabを準備。カメラロールからの画像読み取り(実装挑戦時調査)。<br>
+            ImageObjectへのセット。<br>
+            ※二つ目の画像を読み取った際に一つ目の画像に上書きされないように注意。</p>
+            <h4>感想</h4>
+            <p>自身のレベルでは満足できるものはとても作成できないと感じた。<br>
+            まだまだやりたいことはあってもそれを実装するためにはどうすれば良いのか<br>
+            すぐ立ち止まってしまう。一つ一つの内容の理解度が浅いと感じた。<br>
+            何度も読み解いてみれば納得できるものの、読み解く前にこのようなことが<br>
+            記載されているのだろうと予想できるまでならなければと思った。<br>
+            また、作成にあたって他の方からの助言や、実機を操作していただいた際の反応で<br>
+            気づかされることが多々あり、まだ視野が狭いと感じた。<br>
+            ただ、unityに関してはこの実習がなければ触れることはなかっただろうと感じたため、<br>
+            他の人が触れることがなかったものに触れられた貴重な機会だったと思う。<br>
+            まだC#の知識に乏しいため、C#の知識を身に付けてから作品を更新できたらと思う。</p><br><br>
+        </section> 
+
+        <section id="other">  
+            <h3>なにか作ったら…</h3>
+            <p>他に何か作ったら追加していくところ</p>
+        </section> 
+
+
+        <!--ページの上部へ戻るボタン-->
+        <div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+        <footer>
+            <p><small>Copyright &copy; ohnuki's portfolio All Rights Reserved.</small></p>
+        </footer>
+
+    </body>
+</html>
