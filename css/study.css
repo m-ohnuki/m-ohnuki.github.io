@@ -5,8 +5,15 @@ html{
 	font-size: 100%;
 }
 
+/* 全体の背景指定 */
 body{
+	/* 画像が表示されなかったとき用に似たような色を設定 */
 	background-color: Cornsilk;
+	/* 表示したい背景画像 */
+	background-image: url(../images/hobby/cats/backimage.png);
+	background-repeat: no-repeat;
+	background-size: 30%;
+	background-position: 100px 200px;
 }
 
 
