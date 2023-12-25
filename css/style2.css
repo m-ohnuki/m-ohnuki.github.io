@@ -56,6 +56,22 @@ img {
 	justify-content: space-between;		/* justify-content:親要素にスペースがあるときに、 space-between:子要素を両端配置(3つ以上あれば残りを同間隔で配置)*/
 }
 
+h3 {
+	padding: 0.5em 1em;		/* 文字周りの余白 */
+	color: #000;
+	background: #d4e1e4;	/* 背景色 */
+	border-left: solid 5px #a0cbd6;	/* 左線 */
+	margin-top: 40px;		/* 上と間隔空ける*/
+}
+
+h4 {
+	width: 500px;
+	color: #000;
+	padding: 0 2em;	
+	border-bottom: solid 3px #ddd;	/* 左線 */
+	margin-top: 20px;		/* 上と間隔空ける*/
+}
+
 
 /* page title -------------------------------------------*/
 
@@ -82,14 +98,14 @@ h2 {
 /* footer -------------------------------------------*/
 
 footer {
-	background: #000000;
+	background: #ddd;
 	text-align: center;
 	padding: 20px;
 	margin-top: 40px;
 }
 
 footer p {
-	color: #ffffff;
+	color: #000;
 	font-size: 0.9rem;
 }
 
@@ -118,4 +134,129 @@ footer p {
 	padding: 0 20px 0 0;		/* 日付と内容がくっつかないように */
 }
  
- 
+/* cat紹介欄 -------------------------------------------*/
+/* ポップアップ機能 --------------------------*/
+.c {
+    text-align: center;
+}
+
+.overlay { /* グレーの背景 */
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.5s 0s ease;		/* 状態遷移の速度設定　どのプロパティ使っても違いはそこまでわからない */
+  visibility: hidden;		/* 要素を透明にする(スペースを次の要素で埋めれない) */
+  opacity: 0;		/* 透明度　0　→　透明 */
+  top: 0;		/* 全部0にするとブラウザ画面全体に背景色が広がる */
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.pop-up {		/* ポップアップを非表示に */
+	display: none;	
+}
+
+.pop-up:checked + .overlay {	/* :checkedチェックが入ってるとき */
+	opacity: 1;		/* 透明度　1　→　不透明 */
+	z-index: 100000;		/* 背面か前面か調整　大きいほど前に出てくる */
+	background-color: #000000D0;
+	width: 100%;		/* 親要素に対して */
+}
+#pop-up1:checked + .overlay {
+	visibility: visible;		/* 要素を表示する(透明から戻す) */
+}
+#pop-up2:checked + .overlay {
+	visibility: visible;
+}
+#pop-up3:checked + .overlay {
+	visibility: visible;
+}
+#pop-up4:checked + .overlay {
+	visibility: visible;
+}
+#pop-up5:checked + .overlay {
+	visibility: visible;
+}
+#pop-up6:checked + .overlay {
+	visibility: visible;
+}
+#pop-up7:checked + .overlay {
+	visibility: visible;
+}
+#pop-up8:checked + .overlay {
+	visibility: visible;
+}
+#pop-up9:checked + .overlay {
+	visibility: visible;
+}
+#pop-up10:checked + .overlay {
+	visibility: visible;
+}
+
+.popWindow {
+  border-radius: 5px;	/* 角の丸み */
+  overflow: auto;		/* スクロールバー表示する */
+  max-height: 95%;		/* グレー背景と画像のすき間を作る */
+  min-width: fit-content; /* 横幅が広い時に白の部分が大きくならないため */
+  max-width: 95%;
+  position: fixed;		/* 表示位置の固定　ここを基準に下の位置調整する */
+  top: 50%;		/* h2タグと同じ設定 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100010;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 10px auto;
+  padding: 4px 10px;
+  background: #FFFD; /* 枠の色 */
+  text-align: center; /* 文字を中央寄せ */
+  transition: all 500ms ease-in-out;
+}
+.popWindow .ptitle {
+  font-size: 15px;
+  margin: 8px;
+  color: #333;
+}
+.popWindow .close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 24px;
+  line-height: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  padding: 2px;
+}
+.popWindow .close:hover {
+  color: #ff3939;
+  cursor: pointer;
+}
+.popWindow::-webkit-scrollbar-track {
+  background: none;
+}
+.popWindow::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.popWindow::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 5px;
+}
+.clickable:hover {		/* 画像にカーソルが乗ったら指のポインタに変更 */
+  cursor: pointer;
+}
+
+.textcat dd {		/* 性別とか見づらいので間隔空けた */
+	margin-bottom: 10px;
+}
+/* フレックスボックス --------------------------*/
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.containeritem {
+	margin: 20px;
+	border: outset 10px #82aaaa;
+}

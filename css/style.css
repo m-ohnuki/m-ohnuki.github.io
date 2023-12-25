@@ -196,13 +196,14 @@ h4.nextcat{
 .carousel {
 	/* 水平方向中央寄せ */
 	width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center; /* コンテンツを水平方向に中央揃え */
-  align-items: center; /* コンテンツを垂直方向に中央揃え */
-  }
-  /* カルーセル内容 */
-  .contains {
+  	overflow: hidden;
+  	display: flex;
+  	justify-content: center; /* コンテンツを水平方向に中央揃え */
+  	align-items: center; /* コンテンツを垂直方向に中央揃え */
+}
+
+/* カルーセル内容 */
+.contains {
 	/* 下の.slideと同じサイズ*/
 	width: 1000px;
 	height: 600px;
@@ -211,13 +212,15 @@ h4.nextcat{
 	padding: 0;
 	list-style: none;
 	background-color: rgb(0, 0, 0);
-  }
-  /* スライド切り換え用ラジオボタンは常に非表示 */
-  .slide_select {
+}
+
+/* スライド切り換え用ラジオボタンは常に非表示 */
+.slide_select {
 	display: none;
-  }
+}
+
   /* 各スライド */
-  .slide {
+.slide {
 	/* 上の.containsと同じサイズ*/
 	width: 1000px;
 	height: 600px;
