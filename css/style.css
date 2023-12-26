@@ -415,8 +415,7 @@ ul {
 	opacity: 1;
   }
 
-/*PAGE TOP（↑）設定
----------------------------------------------------------------------------*/
+/*PAGE TOP（↑）設定---------------------------------------------------------------------------*/
 #topButton {
 	position: fixed;
 	bottom: 20px;
@@ -432,4 +431,14 @@ ul {
   }
   
 
+/* 実機動画用 */
+.moveisflex{
+    display: flex;
+	flex-wrap: wrap;
+	
+}
+.moveisitem{
+    margin-right: 50px;
+	margin-top: 10px;
+}
 
